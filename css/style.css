@@ -215,6 +215,15 @@ a:active {
   color: #7f7f8e;
 }
 
+.logo > a,
+.logo > a:visited {
+  color: #06000d;
+}
+
+.logo > a:hover {
+  color: #e9505e;
+}
+
 a.button,
 a.button:visited,
 a.button:hover,
@@ -313,10 +322,6 @@ a.button:active {
   .two-iphones {
     margin-top: 0%;
   }
-
-  /* .steps {
-    margin-left: auto;
-  } */
 
   .step {
     max-width: 250px;
