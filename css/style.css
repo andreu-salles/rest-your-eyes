@@ -229,7 +229,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #d63e69;
+  background-color: #f37681;
 }
 
 a.button:active {
@@ -248,13 +248,6 @@ a.button:active {
   padding-left: 24px;
   padding-right: 24px;
   height: 32px;
-}
-
-a.button:hover {
-  background-color: #e9505e;
-}
-a.button:hover {
-  background-color: #e9505e;
 }
 
 .dark-mode {
