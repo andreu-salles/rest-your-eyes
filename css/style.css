@@ -94,9 +94,6 @@ footer {
   padding: 32px 16px;
 }
 
-.dark-mode {
-}
-
 .dark-mode .wrapper {
   padding: 15% 0 15% 0;
   display: flex;
@@ -107,6 +104,16 @@ footer {
 
 .dark-mode .text {
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.dark-mode .text a {
+  width: auto;
+  margin-top: 24px;
+  margin-right: auto;
 }
 
 .dark-mode .wrapper > img {
@@ -197,6 +204,13 @@ h6 {
   line-height: 17px;
 }
 
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #7f7f8e;
+}
+
 a.button,
 a.button:visited,
 a.button:hover,
@@ -204,15 +218,36 @@ a.button:active {
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-weight: 400;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+a.button {
+  background-color: #e9505e;
+}
+
+a.button:hover {
+  background-color: #d63e69;
+}
+
+a.button:active {
+  background-color: #d73140;
+}
+
+.large {
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
+}
+
+.small {
   font-size: 14px;
   padding-left: 24px;
   padding-right: 24px;
   height: 32px;
-  font-weight: 400;
-  background-color: #e9505e;
-  color: white;
-  border-radius: 8px;
-  border: none;
 }
 
 a.button:hover {
@@ -318,6 +353,18 @@ a.button:hover {
 @media (min-width: 992px) {
   .wrapper {
     max-width: 70%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 72px auto 0 auto;
+    overflow: hidden;
+  }
+
+  main p {
+    margin-bottom: 48px;
   }
 
   .two-iphones {
