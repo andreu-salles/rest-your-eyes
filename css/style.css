@@ -50,7 +50,7 @@ footer {
 #how-it-works .wrapper {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10% 10%;
 }
@@ -156,6 +156,10 @@ body {
 p {
   color: #7f7f8e;
   line-height: 21px;
+}
+
+h2 span {
+  color: #e9505e;
 }
 
 h1,
@@ -302,16 +306,17 @@ a.button:active {
 
   #how-it-works .wrapper {
     flex-direction: row;
-    padding: 10vh;
+    justify-content: space-around;
+    padding-top: 10vh;
   }
 
   .two-iphones {
     margin-top: 0%;
   }
 
-  .steps {
+  /* .steps {
     margin-left: auto;
-  }
+  } */
 
   .step {
     max-width: 250px;
