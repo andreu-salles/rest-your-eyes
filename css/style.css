@@ -124,7 +124,7 @@ footer {
 footer .wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 24px;
   padding-bottom: 32px;
 }
@@ -329,7 +329,12 @@ a.button:active {
   }
 
   .what-is-cvs {
-    padding: 72px 0 96px 64px;
+    padding: 72px 32px 96px 32px;
+  }
+
+  .what-is-cvs .wrapper .content {
+    max-width: 60%;
+    margin: auto;
   }
 
   .dark-mode {
