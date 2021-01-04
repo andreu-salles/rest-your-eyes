@@ -124,9 +124,14 @@ footer {
 footer .wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 24px;
   padding-bottom: 32px;
+}
+
+.qr-code {
+  visibility: collapse;
 }
 
 footer .list {
@@ -355,6 +360,10 @@ a.button:active {
   .dark-mode .wrapper > img {
     max-height: 70vh;
     margin-top: 0;
+  }
+
+  .qr-code {
+    visibility: visible;
   }
 }
 
