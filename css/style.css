@@ -1,3 +1,13 @@
+:root {
+  --black: #06000d;
+  --cream: #f3f3f5;
+  --grey: #7f7f8e;
+  --white: #f6eee7;
+  --main: #e9505e;
+  --accent-1: #f0b643;
+  --accent-2: #6bd19f;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -44,7 +54,7 @@ main img {
 
 #how-it-works,
 footer {
-  background-color: #f3f3f5;
+  background-color: var(--cream);
 }
 
 #how-it-works .wrapper {
@@ -148,23 +158,23 @@ footer .list a {
 ==================================== */
 
 hr {
-  border: 1px solid #f3f3f5;
+  border: 1px solid var(--cream);
   width: 100%;
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  color: #06000d;
+  color: var(--black);
 }
 
 p {
-  color: #7f7f8e;
-  line-height: 21px;
+  color: var(--grey);
+  line-height: 24px;
 }
 
 h2 span {
-  color: #e9505e;
+  color: var(--main);
 }
 
 h1,
@@ -185,10 +195,12 @@ h2 {
   font-size: 48px;
   margin: 8px 8px;
   text-align: center;
+  line-height: 60px;
 }
 
 h3 {
   font-size: 39px;
+  line-height: 48px;
 }
 
 h4 {
@@ -210,23 +222,23 @@ h6 {
 
 .steps p {
   font-size: 14px;
-  line-height: 17px;
+  line-height: 21px;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #7f7f8e;
+  color: var(--grey);
 }
 
 .logo > a,
 .logo > a:visited {
-  color: #06000d;
+  color: var(--black);
 }
 
 .logo > a:hover {
-  color: #e9505e;
+  color: var(--main);
 }
 
 a.button,
@@ -243,7 +255,7 @@ a.button:active {
 }
 
 a.button {
-  background-color: #e9505e;
+  background-color: var(--main);
 }
 
 a.button:hover {
@@ -269,12 +281,12 @@ a.button:active {
 }
 
 .dark-mode {
-  background-color: #06000d;
+  background-color: var(--black);
 }
 
 .dark-mode h3,
 .dark-mode p {
-  color: #f3f3f5;
+  color: var(--cream);
 }
 
 .alert {
@@ -291,13 +303,13 @@ a.button:active {
 
 .alert h6 {
   margin: 2px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .alert p {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 8px;
-  line-height: 17px;
+  line-height: 20px;
 }
 
 /* ================================= 
@@ -305,6 +317,16 @@ a.button:active {
 ==================================== */
 
 @media (min-width: 768px) {
+  body {
+    font-size: 20px;
+    color: var(--black);
+  }
+
+  p {
+    color: var(--grey);
+    line-height: 30px;
+  }
+
   .wrapper {
     max-width: 85%;
     margin: auto;
@@ -321,6 +343,7 @@ a.button:active {
   #how-it-works .wrapper {
     flex-direction: row;
     justify-content: space-around;
+    gap: 15%;
     padding-top: 10vh;
   }
 
@@ -329,8 +352,9 @@ a.button:active {
   }
 
   .step {
-    max-width: 250px;
+    max-width: 450px;
     font-size: 14px;
+    line-height: 21px;
   }
 
   .what-is-cvs {
@@ -385,6 +409,6 @@ a.button:active {
   }
 
   .two-iphones {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
