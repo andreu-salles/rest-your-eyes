@@ -429,6 +429,12 @@ button:active {
   }
 }
 
+@media (min-width: 1922px) {
+  main img {
+    max-width: 58%;
+  }
+}
+
 @keyframes fadein {
   from {
     opacity: 0%;
