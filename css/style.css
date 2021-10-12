@@ -3,6 +3,7 @@
   --cream: #f3f3f5;
   --grey: #7f7f8e;
   --main: #e9505e;
+  --secondary: #fdb712;
 }
 
 /* ================================= 
@@ -184,6 +185,9 @@ p {
 
 h2 span {
   color: var(--main);
+  background: linear-gradient(to left, var(--main), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h1,
@@ -258,10 +262,13 @@ a.button:active {
 
 a.button {
   background-color: var(--main);
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.5, 3, 0, 1);
 }
 
 a.button:hover {
   background-color: #f37681;
+  transform: scale(1.15, 1, 15);
 }
 
 a.button:active {
